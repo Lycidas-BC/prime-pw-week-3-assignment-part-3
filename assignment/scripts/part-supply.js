@@ -28,7 +28,11 @@ supplyChanges.push(25);
 //    - if the value is 0, skip it. Do not log it to the console.
 //    - if the value is negative, format the log as 'Part count -x.'
 console.log('6. Showing supplyChanges...');
-
+for (x of supplyChanges) {
+  if (x != 0){
+    console.log(x > 0 ? `Added ${x} parts.`:`Part count ${x}`);
+  }
+}
 
 // STRETCH GOALS
 console.log('---  Stretch Goals  ---');
